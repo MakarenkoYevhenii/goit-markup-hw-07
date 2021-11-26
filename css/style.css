@@ -1,7 +1,7 @@
 :root {
   --maincolor: rgb(33, 33, 33);
   --bluecolor: rgba(33, 150, 243, 1);
-  --silvercolor: rgba(117, 117, 117);
+  --silvercolorcontacts: rgba(117, 117, 117);
   --rockcolor: rgb(47, 48, 58);
   --whitecolor: rgba(245, 244, 250);
   --whitetext: rgba(255, 255, 255, 1);
@@ -69,22 +69,22 @@ ul {
 img {
   display: block;
 }
-.link {
+.header__link {
   color: var(--maincolor);
   text-decoration: none;
 }
 
-.link:hover,
-.link:focus {
+.header__link:hover,
+.header__link:focus {
   color: var(--bluecolor);
 }
-.link-current {
+.header__link--current {
   color: var(--bluecolor);
   text-decoration: none;
 }
 li,
-.list,
-.list-contacts,
+.header__list,
+.header__list-contacts,
 .listbenefits,
 .list-team,
 .listedge,
@@ -174,7 +174,7 @@ li,
 .portfolio {
   line-height: 2;
 }
-.emblema {
+.header__emblema {
   font-weight: 700;
   font-family: "Raleway";
   text-decoration: none;
@@ -182,16 +182,16 @@ li,
   font-size: 26px;
   margin-right: 93px;
 }
-.emblema:hover,
-.emblema:focus {
+.header__emblema:hover,
+.header__emblema:focus {
   color: var(--maincolor);
 }
-.web,
+.header__web,
 .web-basment {
   color: var(--bluecolor);
 }
 
-.contacts {
+.contacts__link {
   color: var(--silvercolor);
   text-decoration: none;
   display: flex;
@@ -199,12 +199,12 @@ li,
   /* animation */
   transition: color var(--animation);
 }
-.contacts:hover,
-.contacts:focus
+.contacts__link:hover,
+.contacts__link:focus
 {
   color: var(--bluecolor);
 }
-.svg-contact
+.contacts__svg
 {
   fill: currentColor;
   margin-right: 10px;
@@ -318,36 +318,36 @@ li,
   border-bottom-style: solid;
   border-bottom-color: var(--headerline);
 }
-.header-navigation {
+.header__navigation {
   display: flex;
   width: 700px;
   align-items: center;
 }
-.list {
+.header__list {
   display: flex;
   align-items: center;
 }
-.list-item:last-child {
+.header__list-item:last-child {
   margin-right: 0;
 }
 
-.link,
-.link-current {
+.header__link,
+.header__link--current {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
   margin-right: 50px;
   transition: color var(--animation);
 }
-.list-contacts {
+.header__list-contacts {
   display: flex;
   margin-left: auto;
   align-items: center;
 }
-.contacts-item:not(:last-child) {
+.contacts__item:not(:last-child) {
   margin-right: 30px;
 }
-.contacts-item
+.contacts__item
 {display: flex;
 }
 /*basement*/
@@ -705,7 +705,7 @@ align-items: baseline;
   position: relative;
   overflow: hidden;
 }
-.link-current::after
+.header__link--current::after
 {
   position: relative;
   display: block;
