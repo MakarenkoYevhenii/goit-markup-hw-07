@@ -70,14 +70,9 @@
     align-items: center;
     /* animation */
     transition: color var(--animation);
-    }
-    &:focus,
-    &:hover
-    {
-      color: var(--bluecolor);
-    }
+ 
 }
-
+}
 .header__emblema {
   font-weight: 700;
   font-family: "Raleway";
@@ -94,4 +89,28 @@
 .header__web {
   color: var(--bluecolor);
 }
+.contacts__item
+{display: flex;
 
+&:not(:last-child) {
+  margin-right: 30px;
+}}
+.contacts__link 
+{
+  color: var(--silvercolorcontacts);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  /* animation */
+  transition: color var(--animation);
+
+&:hover,
+&:focus
+{
+  color: var(--bluecolor);
+}}
+.header__list-contacts {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
