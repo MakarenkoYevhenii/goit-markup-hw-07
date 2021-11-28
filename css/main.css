@@ -707,6 +707,12 @@
   border-color: var(--bordermodal);
 }
 
+.inputmodal:hover + .svg-modal,
+.inputmodal:focus + .svg-modal,
+.inputmodal:focus-visible + .svg-modal {
+  fill: var(--bordermodal);
+}
+
 .svg-modal {
   fill: var(--maincolor);
   position: relative;
